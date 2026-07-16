@@ -1,13 +1,13 @@
 :root {
-    --void-bg-1: #F8FAFC;
-    --void-bg-2: #F1F5F9;
+    --void-bg-1: #FAF9F6;
+    --void-bg-2: #F2F0EA;
     --surface-bg: rgba(255, 255, 255, 0.65);
     --surface-border: rgba(0, 0, 0, 0.06);
     --primary: #0891B2;
     --primary-gradient: linear-gradient(135deg, #0891B2, #06B6D4);
     --secondary-blend: #8B5CF6;
-    --text-heading: #0F172A;
-    --text-body: #475569;
+    --text-heading: #1C1917;
+    --text-body: #57534E;
     
     --font-sans: 'Inter', sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
