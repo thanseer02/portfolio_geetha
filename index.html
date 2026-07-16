@@ -8,57 +8,53 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
-    <div class="ambient-glow"></div>
-    <div class="flutter-nod-bg"></div>
+    <!-- CSS Aurora Glows -->
+    <div class="aurora-bg">
+        <div class="aurora-blob blob-1"></div>
+        <div class="aurora-blob blob-2"></div>
+    </div>
 
-    <nav class="pill-nav">
-        <ul>
-            <li><a href="#about" class="active">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-        </ul>
-    </nav>
+    <!-- Navigation -->
+    <header class="glass-nav" id="navbar">
+        <div class="nav-content">
+            <a href="#" class="nav-logo">Sangeetha<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </header>
 
     <main class="container">
         
         <!-- Hero Section -->
-        <section id="about" class="section scroll-reveal">
-            
-            <div class="glass-card hero-card interactive-card">
-                <div class="card-inner">
-                    <p class="role-mono">// ASSOCIATE SOFTWARE ENGINEER &middot; FLUTTER DEVELOPER</p>
-                    <h1 class="hero-title">SANGEETHA<br>RAMAKRISHNAN</h1>
-                    
-                    <p class="summary-text">
-                        Associate Software Engineer and B.Tech Computer Science graduate with experience in Flutter mobile application development. Skilled in building responsive UIs, debugging applications, and implementing scalable features using modern development practices. Strong problem-solving abilities with experience collaborating in agile teams to deliver high-quality software.
-                    </p>
-
-                    <div class="hero-meta">
-                        <div class="meta-item">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                            <span>Kannur, Kerala (670018)</span>
-                        </div>
-                        <div class="meta-item">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                            <a href="tel:+919947286440" style="color: inherit; text-decoration: none;">+91-99472-86440</a>
-                        </div>
-                        <div class="meta-item">
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                            <a href="mailto:sangeethar159@gmail.com" style="color: inherit; text-decoration: none;">sangeethar159@gmail.com</a>
-                        </div>
-                    </div>
-
-                    <div class="action-buttons">
-                        <a href="#" class="btn-primary">LinkedIn</a>
-                        <a href="#" class="btn-secondary">GitHub</a>
+        <section id="about" class="hero reveal">
+            <div class="hero-content">
+                <span class="hero-greeting">Hi, I'm</span>
+                <h1 class="hero-title">Sangeetha Ramakrishnan</h1>
+                <p class="hero-subtitle">
+                    Associate Software Engineer & Flutter Developer crafting highly responsive, performant mobile applications and scalable digital experiences.
+                </p>
+                
+                <div class="hero-contact">
+                    <a href="mailto:sangeethar159@gmail.com" class="pill-btn primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        sangeethar159@gmail.com
+                    </a>
+                    <a href="tel:+919947286440" class="pill-btn">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        +91-99472-86440
+                    </a>
+                    <div class="pill-btn" style="pointer-events: none; border: none; background: transparent;">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--text-secondary)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span style="color: var(--text-secondary)">Kannur, Kerala</span>
                     </div>
                 </div>
             </div>
@@ -66,228 +62,130 @@
 
         <!-- Experience Section -->
         <section id="experience" class="section">
+            <h2 class="section-title reveal">Experience</h2>
             
-            <div class="timeline-container">
-                <div class="timeline-line"></div>
+            <div class="timeline">
                 
-                <!-- Experience Item 1 -->
-                <div class="timeline-item scroll-reveal">
+                <article class="timeline-item reveal active">
                     <div class="timeline-dot"></div>
-                    <article class="glass-card interactive-card timeline-content">
-                        <div class="card-inner">
-                            <span class="timeline-date">March 2026 – Present</span>
-                            <h3 class="card-title">Associate Software Engineer</h3>
-                            <h4 class="card-subtitle">Aufait Technologies, Calicut</h4>
-                            <ul class="bullet-list">
-                                <li>Developing and maintaining production-ready mobile applications using Flutter with a focus on scalable architecture and performance optimization.</li>
-                                <li>Implementing responsive UI components and managing application state using modern Flutter state management approaches.</li>
-                                <li>Collaborating with cross-functional teams to integrate APIs, troubleshoot issues, and deliver new features in an agile environment.</li>
-                                <li>Maintaining code quality using Git version control, code reviews, and modular architecture practices.</li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
+                    <span class="timeline-date">March 2026 – Present</span>
+                    <h3 class="timeline-title">Associate Software Engineer</h3>
+                    <h4 class="timeline-company">Aufait Technologies, Calicut</h4>
+                    <ul class="timeline-desc">
+                        <li>Developing and maintaining production-ready mobile applications using Flutter with a focus on scalable architecture and performance optimization.</li>
+                        <li>Implementing responsive UI components and managing application state using modern Flutter state management approaches.</li>
+                        <li>Collaborating with cross-functional teams to integrate APIs, troubleshoot issues, and deliver new features in an agile environment.</li>
+                        <li>Maintaining code quality using Git version control, code reviews, and modular architecture practices.</li>
+                    </ul>
+                </article>
 
-                <!-- Experience Item 2 -->
-                <div class="timeline-item scroll-reveal">
+                <article class="timeline-item reveal">
                     <div class="timeline-dot"></div>
-                    <article class="glass-card interactive-card timeline-content">
-                        <div class="card-inner">
-                            <span class="timeline-date">July 2025 – Feb 2026</span>
-                            <h3 class="card-title">Software Engineer Intern</h3>
-                            <h4 class="card-subtitle">Aufait Technologies, Calicut</h4>
-                            <ul class="bullet-list">
-                                <li>Built and enhanced mobile UI screens using Flutter widgets while learning mobile development best practices.</li>
-                                <li>Assisted in debugging application issues and fixing UI inconsistencies across multiple device sizes.</li>
-                                <li>Worked with senior developers on state management, API integration, and Flutter project structure.</li>
-                                <li>Participated in code reviews and gained hands-on experience with Git-based workflows.</li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
+                    <span class="timeline-date">July 2025 – Feb 2026</span>
+                    <h3 class="timeline-title">Software Engineer Intern</h3>
+                    <h4 class="timeline-company">Aufait Technologies, Calicut</h4>
+                    <ul class="timeline-desc">
+                        <li>Built and enhanced mobile UI screens using Flutter widgets while learning mobile development best practices.</li>
+                        <li>Assisted in debugging application issues and fixing UI inconsistencies across multiple device sizes.</li>
+                        <li>Worked with senior developers on state management, API integration, and Flutter project structure.</li>
+                    </ul>
+                </article>
 
-                <!-- Experience Item 3 -->
-                <div class="timeline-item scroll-reveal">
+                <article class="timeline-item reveal">
                     <div class="timeline-dot"></div>
-                    <article class="glass-card interactive-card timeline-content">
-                        <div class="card-inner">
-                            <h3 class="card-title">Web Development Intern</h3>
-                            <h4 class="card-subtitle">Sysbreeze Technologies, Calicut</h4>
-                            <ul class="bullet-list">
-                                <li>Developed responsive web pages using HTML, CSS, JavaScript, and PHP for client websites.</li>
-                                <li>Assisted in implementing front-end UI components and integrating them with backend functionality.</li>
-                                <li>Optimized layouts for responsiveness and cross-browser compatibility.</li>
-                                <li>Gained practical experience in web development workflows, debugging, and deployment.</li>
-                            </ul>
-                        </div>
-                    </article>
-                </div>
+                    <span class="timeline-date">2024</span>
+                    <h3 class="timeline-title">Web Development Intern</h3>
+                    <h4 class="timeline-company">Sysbreeze Technologies, Calicut</h4>
+                    <ul class="timeline-desc">
+                        <li>Developed responsive web pages using HTML, CSS, JavaScript, and PHP for client websites.</li>
+                        <li>Assisted in implementing front-end UI components and integrating them with backend functionality.</li>
+                        <li>Optimized layouts for responsiveness and cross-browser compatibility.</li>
+                    </ul>
+                </article>
 
             </div>
         </section>
 
-        <!-- Projects Section -->
+        <!-- Marquee Skills (Breaks out of container) -->
+        <section id="skills" class="marquee-container reveal">
+            <div class="marquee-content">
+                <span class="marquee-item">Flutter</span>
+                <span class="marquee-item">Dart</span>
+                <span class="marquee-item">Firebase</span>
+                <span class="marquee-item">REST APIs</span>
+                <span class="marquee-item">Git</span>
+                <span class="marquee-item">HTML/CSS</span>
+                <span class="marquee-item">Python</span>
+                <span class="marquee-item">MySQL</span>
+                <!-- Duplicate for seamless loop -->
+                <span class="marquee-item">Flutter</span>
+                <span class="marquee-item">Dart</span>
+                <span class="marquee-item">Firebase</span>
+                <span class="marquee-item">REST APIs</span>
+                <span class="marquee-item">Git</span>
+                <span class="marquee-item">HTML/CSS</span>
+                <span class="marquee-item">Python</span>
+                <span class="marquee-item">MySQL</span>
+            </div>
+        </section>
+
+        <!-- Projects Section (Bento Grid) -->
         <section id="projects" class="section">
+            <h2 class="section-title reveal">Projects</h2>
             
-            <div class="grid-2">
-                <!-- Project 1 -->
-                <article class="glass-card interactive-card project-card scroll-reveal">
-                    <div class="card-inner">
-                        <span class="timeline-date">May 2023</span>
-                        <h3 class="card-title">Fish Freshness Detection & Recipe Recommendation App</h3>
-                        
-                        <div class="tech-tags">
-                            <span class="tag">Flutter</span>
-                            <span class="tag">Python</span>
-                            <span class="tag">PHP</span>
-                            <span class="tag">YOLOv8</span>
-                            <span class="tag">Gemini API</span>
-                        </div>
-                        
-                        <p class="body-text">
-                            Mobile app detecting fish freshness from images via a YOLOv8 model, recommending recipes via the Gemini API based on dietary requirements. Managed data collection, labeling, and AI integration for accurate predictions and personalized responses.
+            <div class="projects-grid">
+                
+                <article class="bento-card project-card featured reveal">
+                    <div style="flex: 1">
+                        <span class="project-date">May 2023</span>
+                        <h3 class="project-title">Fish Freshness Detection & Recipe Recommendation App</h3>
+                        <p class="project-desc">
+                            Mobile application detecting fish freshness from images via a YOLOv8 model, recommending recipes via the Gemini API based on dietary requirements. Managed data collection, labeling, and AI integration for accurate predictions and personalized responses.
                         </p>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">YOLOv8</span>
+                            <span class="tech-tag">Gemini API</span>
+                        </div>
                     </div>
                 </article>
 
-                <!-- Project 2 -->
-                <article class="glass-card interactive-card project-card scroll-reveal">
-                    <div class="card-inner">
-                        <h3 class="card-title">Donate Sphere — Defective Fabric Donation Platform</h3>
-                        
-                        <div class="tech-tags">
-                            <span class="tag">Flask</span>
-                            <span class="tag">YOLOv8</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">HTML/CSS/JS</span>
-                        </div>
-                        
-                        <p class="body-text">
-                            Full-stack web app detecting fabric defects via YOLOv8, enabling users to donate usable materials. Flask backend routing, MySQL data handling, intuitive HTML/CSS/JS front end.
-                        </p>
+                <article class="bento-card project-card reveal">
+                    <h3 class="project-title">Donate Sphere</h3>
+                    <p class="project-desc">
+                        Full-stack web app detecting fabric defects via YOLOv8, enabling users to donate usable materials. Features Flask backend routing, MySQL data handling, and an intuitive HTML/CSS/JS front end.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">YOLOv8</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">HTML/CSS/JS</span>
                     </div>
                 </article>
+                
+                <!-- Additional placeholder for Bento layout -->
+                <article class="bento-card project-card reveal" style="display: flex; justify-content: center; align-items: center; background: rgba(0, 229, 255, 0.05); border: 1px dashed rgba(0, 229, 255, 0.3);">
+                    <p style="color: var(--accent-cyan); font-family: var(--font-mono); text-align: center;">More Projects<br>Coming Soon</p>
+                </article>
+
             </div>
         </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            
-            <div class="grid-2">
-                <div class="glass-card interactive-card scroll-reveal">
-                    <div class="card-inner">
-                        <h3 class="card-title">Technical Skills</h3>
-                        
-                        <div class="skill-group">
-                            <h4 class="skill-label">Mobile Development</h4>
-                            <p class="skill-val">Flutter, Dart, Responsive UI Design, State Management</p>
-                        </div>
-                        
-                        <div class="skill-group">
-                            <h4 class="skill-label">Programming Languages</h4>
-                            <p class="skill-val">Dart, Java, Python, C</p>
-                        </div>
-                        
-                        <div class="skill-group">
-                            <h4 class="skill-label">Web Development</h4>
-                            <p class="skill-val">HTML, CSS, JavaScript</p>
-                        </div>
-
-                        <div class="skill-group">
-                            <h4 class="skill-label">Database & API</h4>
-                            <p class="skill-val">MySQL, REST API Integration</p>
-                        </div>
-                        
-                        <div class="skill-group">
-                            <h4 class="skill-label">Tools & OS</h4>
-                            <p class="skill-val">Git, GitHub, VS Code, Android Studio, Windows, Linux</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="glass-card interactive-card scroll-reveal">
-                    <div class="card-inner">
-                        <h3 class="card-title">Soft Skills</h3>
-                        <div class="tech-tags">
-                            <span class="tag">Teamwork</span>
-                            <span class="tag">Problem Solving</span>
-                            <span class="tag">Communication</span>
-                            <span class="tag">Time Management</span>
-                            <span class="tag">Adaptability</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education & Certifications -->
-        <section id="education" class="section">
-            
-            <div class="grid-2">
-                <div class="glass-card interactive-card scroll-reveal">
-                    <div class="card-inner">
-                        <h3 class="card-title">Education</h3>
-                        
-                        <div class="edu-item">
-                            <h4 class="card-subtitle">Vimal Jyothi Engineering College</h4>
-                            <span class="timeline-date">2021 – 2025</span>
-                            <p class="body-text">B.Tech Computer Science & Engineering (CGPA 9.03)<br>B.Tech Electronics & Communication Engineering (Minors)</p>
-                        </div>
-                        
-                        <div class="edu-item">
-                            <h4 class="card-subtitle">Indian School Al Ghubra, Muscat</h4>
-                            <span class="timeline-date">2020 – 2021</span>
-                            <p class="body-text">Higher Secondary (93.00%)</p>
-                        </div>
-                        
-                        <div class="edu-item">
-                            <h4 class="card-subtitle">Indian School Al Ghubra, Muscat</h4>
-                            <span class="timeline-date">2018 – 2019</span>
-                            <p class="body-text">High School (94.60%)</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="glass-card interactive-card scroll-reveal">
-                    <div class="card-inner">
-                        <h3 class="card-title">Activities & Certifications</h3>
-                        
-                        <div class="edu-item">
-                            <h4 class="card-subtitle">Google AI Professional Certificate</h4>
-                            <span class="timeline-date">Google via Coursera</span>
-                            <p class="body-text">Applied AI across research, content creation, data analysis, and app development; built 20+ AI artifacts and a custom AI solution; strong prompt engineering and output evaluation skills.</p>
-                        </div>
-
-                        <div class="edu-item">
-                            <h4 class="card-subtitle">Google Cloud Skills Boost Program</h4>
-                            <p class="body-text">Completed Associate Cloud Engineer Track; hands-on with Compute Engine, IAM, Cloud Storage, Kubernetes.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        
     </main>
 
     <footer class="footer">
-        <div class="container footer-content scroll-reveal">
-            <div class="personal-details">
-                <h3 class="card-title">Personal Details</h3>
-                <p>Gender: Female &nbsp;|&nbsp; Date of Birth: 04 December 2003 &nbsp;|&nbsp; Marital Status: Unmarried</p>
-                <p>Languages: English, Malayalam, Hindi, Tamil</p>
-            </div>
-            
-            <div class="footer-links action-buttons">
-                <a href="#" class="btn-icon" aria-label="LinkedIn Profile">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" class="social-icon" aria-label="LinkedIn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
                 </a>
-                <a href="#" class="btn-icon" aria-label="GitHub Profile">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                </a>
-                <a href="mailto:sangeethar159@gmail.com" class="btn-icon" aria-label="Send Email">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <a href="#" class="social-icon" aria-label="GitHub">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                 </a>
             </div>
+            <p>&copy; 2026 Sangeetha Ramakrishnan. Crafted with precision.</p>
         </div>
     </footer>
 
