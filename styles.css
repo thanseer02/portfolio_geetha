@@ -147,6 +147,7 @@ h1, h2, h3, h4, h5 {
 .section {
     margin-bottom: calc(var(--spacing-grid) * 10);
     position: relative;
+    scroll-margin-top: 120px;
 }
 
 .grid-2 {
